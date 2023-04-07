@@ -97,11 +97,10 @@ if (theModal !== null) {
 }
 
 
-/* Back To Top Button */
-// Get the button
+////////To top
 myButton = document.getElementById("myBtn");
 
-// When the user scrolls down 20px from the top of the document, show the button
+
 function scrollFunctionBTT() {
 	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
 		myButton.style.display = "block";
@@ -110,8 +109,7 @@ function scrollFunctionBTT() {
 	}
 }
 
-// When the user clicks on the button, scroll to the top of the document
+
 function topFunction() {
-	document.body.scrollTop = 0; // for Safari
-	document.documentElement.scrollTop = 0; // for Chrome, Firefox, IE and Opera
+	document.documentElement.scrollTop = 0;
 }

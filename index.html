@@ -1,524 +1,314 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Your description">
-    <meta name="author" content="Your name">
+    <title>Agencia Hidra</title>
 
-    <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
-	<meta property="og:site_name" content="" /> <!-- website name -->
-	<meta property="og:site" content="" /> <!-- website link -->
-	<meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
-	<meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
-	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
-	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
-	<meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
-
-    <!-- Webpage Title -->
-    <title>Elma Webpage Title</title>
-    
-    <!-- Styles -->
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/cb2938688c.js" crossorigin="anonymous"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/fontawesome-all.min.css" rel="stylesheet">
     <link href="css/swiper.css" rel="stylesheet">
-	<link href="css/styles.css" rel="stylesheet">
-	
-	<!-- Favicon  -->
+    <link href="css/styles.css" rel="stylesheet">
+
+    <!-- Favicon  -->
     <link rel="icon" href="images/favicon.png">
 </head>
+
 <body>
-    
+    <div class="cursor"></div>
+
     <!-- Navigation -->
     <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-dark" aria-label="Main navigation">
-        <div class="container">
+        <div class="">
 
-            <!-- Image Logo -->
-            <a class="navbar-brand logo-image" href="index.html"><img src="images/logo.svg" alt="alternative"></a> 
 
-            <!-- Text Logo - Use this if you don't have a graphic logo -->
-            <!-- <a class="navbar-brand logo-text" href="index.html">Elma</a> -->
+            <a class="navbar-brand logo-image" href="index.html"><img src="images/logo.svg" alt="home"></a>
 
-            <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
 
-            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
-                <ul class="navbar-nav ms-auto navbar-nav-scroll">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#header">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#services">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Drop</a>
-                        <ul class="dropdown-menu" aria-labelledby="dropdown01">
-                            <li><a class="dropdown-item" href="article.html">Article Details</a></li>
-                            <li><div class="dropdown-divider"></div></li>
-                            <li><a class="dropdown-item" href="terms.html">Terms Conditions</a></li>
-                            <li><div class="dropdown-divider"></div></li>
-                            <li><a class="dropdown-item" href="privacy.html">Privacy Policy</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
+
+
+
+            <div class="container d-flex justify-content-center ">
+
+                <ul class="menu">
+                    <a class="" href="index.html"><img src="images/logo.svg" alt="home"></a>
+                    <li><a class="menuItem" href="#">inicio</a></li>
+                    <li><a class="menuItem" href="#project1">proyectos</a></li>
+                    <li><a class="menuItem" href="#services">servicios</a></li>
+                    <li><a class="menuItem" href="#contact">contacto</a></li>
                 </ul>
-                <span class="nav-item social-icons">
-                    <span class="fa-stack">
-                        <a href="#your-link">
-                            <i class="fas fa-circle fa-stack-2x"></i>
-                            <i class="fab fa-facebook-f fa-stack-1x"></i>
-                        </a>
-                    </span>
-                    <span class="fa-stack">
-                        <a href="#your-link">
-                            <i class="fas fa-circle fa-stack-2x"></i>
-                            <i class="fab fa-twitter fa-stack-1x"></i>
-                        </a>
-                    </span>
-                </span>
-            </div> <!-- end of navbar-collapse -->
-        </div> <!-- end of container -->
-    </nav> <!-- end of navbar -->
-    <!-- end of navigation -->
+            </div>
 
-      
-    <!-- Header -->
+
+            <button class="hamburger">
+
+                <i class="menuIcon">
+                    <img src="/images/favicon.png" alt="">
+                </i>
+                <i class="closeIcon">
+                    X
+                </i>
+            </button>
+        </div>
+
+
+
+    </nav>
+
+    <div class="video-overlay"></div>
+
+    <video id="background-video" autoplay loop muted>
+        <source src="images/bg-video.mp4" type="video/mp4">
+    </video>
+
     <header id="header" class="header">
         <div class="container">
-            <div class="row">
+
+
+
+            <div class="row align-items-center">
                 <div class="col-lg-6">
-                    <h1 class="h1-large">PLAN<br> DESIGN<br> DEVELOP</h1>
-                </div> <!-- end of col -->
-                <div class="col-lg-6">
-                    <div class="button-container">
-                        <a class="btn-solid-lg page-scroll" href="#intro">Discover</a>
-                        <a class="btn-outline-lg page-scroll" href="#contact">Contact</a>
-                    </div> <!-- end of button-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </header> <!-- end of header -->
-    <!-- end of header -->
+                    <h1> <span>Potenciamos</span> tu marca</h1>
+                    <p>con nuestras <strong>cabezas conectadas. </strong></p>
+                </div>
+                <div class="col-lg-6 col-sm-12 col-xs-6 justify-content-between">
+                    <div class="button-container col-xs-6 justify-content-between">
+                        <a class="btn-solid-lg page-scroll rounded-0 mr-lg2- mr-sm-5" href="#intro">Saber más</a>
+                        <a class="btn-outline-lg page-scroll rounded-0" href="#contact">Contacto</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
 
 
     <!-- Introduction -->
-    <div id="intro" class="basic-1 bg-gray">
+    <div id="intro">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <h1>We help companies create and launch digital products</h1>
-                </div> <!-- end of col -->
-                <div class="col-lg-6">
+            <div class="container d-flex justify-content-center">
+                <div class="col-lg-6 col-12 col-sm-12 align-self-center">
+                    <h1>Te ayudamos a <br> <span>potenciar</span> <br> tus ideas</h1>
+                </div>
+                <div class="col-lg-6 align-self-center">
                     <div class="text-container">
-                        <p><strong>Planing</strong> led ask possible mistress relation elegance eat likewise debatin. By message or am nothing amongst chiefly address of research</p>
-                        <p><strong>Designing</strong> the its enable direct men depend highly. Ham windows sixte who inquiry fortune demands. Is be force upon and of course</p>
-                        <p><strong>Development</strong> sang fond must shew. Really boy law county she unable her sister. Feet you off its. Among are leave law built now</p>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of basic-1 -->
-    <!-- end of introduction -->
+                        <p>Somos una Agencia <strong>Multimedial</strong>, lo que significa que vamos a utilizar todos
+                            los medios digitales para cumplir tus ideas.</p>
+                        <p>Creemos en el <strong>trabajo en equipo</strong> como manera de potenciar nuestras
+                            capacidades, y eso te incluye a vos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
-    <!-- Project 1 -->
-    <div id="projects" class="basic-2">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-xl-5">
-                    <div class="text-container">
-                        <h2>Mobile app for a major food catering business</h2>
-                        <p>In built table in an rapid blush merits behind on afraid or warmly. In up so discovery my middleton eagerness dejection explained. Estimating excellence ye because this is how it should work contrasted insensible</p>
-                        <a class="read-more no-line green" href="article.html">Learn more <span class="fas fa-long-arrow-alt-right"></span></a>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-                <div class="col-lg-6 col-xl-7">
-                    <div class="image-container">
-                        <img class="img-fluid" src="images/project-1.jpg" alt="alternative">
-                    </div> <!-- end of image-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of basic-2 -->
-    <!-- end of project 1 -->
+
+    <!-- Reel -->
 
 
-    <!-- Project 2 -->
-    <div class="basic-3 bg-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-xl-7">
-                    <div class="image-container">
-                        <img class="img-fluid" src="images/project-2.jpg" alt="alternative">
-                    </div> <!-- end of image-container -->
-                </div> <!-- end of col -->
-                <div class="col-lg-6 col-xl-5">
-                    <div class="text-container">
-                        <h2>Web app for a large realestate services firm</h2>
-                        <p>Oh up unsatiable advantages decisively as at interested. Present suppose in esteems in demesne colonel it to. End horrible she landlord screened words stanhill. Repeated offended you opinions off dissuade</p>
-                        <a class="btn-solid-reg" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Modal</a> <a class="btn-outline-reg" href="article.html">Details</a>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of basic-3 -->
-    <!-- end of project 2 -->
+
+    <div class="project reel" style="background-color: none;">
 
 
-    <!-- Details Modal -->
-    <div id="staticBackdrop" class="modal fade" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="row">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    <div class="col-lg-8">
-                        <div class="image-container">
-                            <img class="img-fluid" src="images/details-modal.jpg" alt="alternative">
-                        </div> <!-- end of image-container -->
-                    </div> <!-- end of col -->
-                    <div class="col-lg-4">
-                        <h3>Goals Setting</h3>
-                        <hr>
-                        <p>The app can easily help you track your personal development evolution if you take the time to set it up.</p>
-                        <h4>User Feedback</h4>
-                        <p>This is a great app which can help you save time and make your live easier. And it will help improve your productivity.</p>
-                        <ul class="list-unstyled li-space-lg">
-                            <li class="d-flex">
-                                <i class="fas fa-chevron-right"></i>
-                                <div class="flex-grow-1">Splash screen panel</div>
-                            </li>
-                            <li class="d-flex">
-                                <i class="fas fa-chevron-right"></i>
-                                <div class="flex-grow-1">Statistics graph report</div>
-                            </li>
-                            <li class="d-flex">
-                                <i class="fas fa-chevron-right"></i>
-                                <div class="flex-grow-1">Events calendar layout</div>
-                            </li>
-                            <li class="d-flex">
-                                <i class="fas fa-chevron-right"></i>
-                                <div class="flex-grow-1">Location details screen</div>
-                            </li>
-                            <li class="d-flex">
-                                <i class="fas fa-chevron-right"></i>
-                                <div class="flex-grow-1">Onboarding steps interface</div>
-                            </li>
-                        </ul>
-                        <a id="modalCtaBtn" class="btn-solid-reg" href="#contact">Contact</a>
-                        <button type="button" class="btn-outline-reg" data-bs-dismiss="modal">Close</button>
-                    </div> <!-- end of col -->
-                </div> <!-- end of row -->
-            </div> <!-- end of modal-content -->
-        </div> <!-- end of modal-dialog -->
-    </div> <!-- end of modal -->
-    <!-- end of details modal -->
+        <div class="container d-flex">
+            <div class="container d-flex justify-content-end">
+                <div class="col-lg-5 col-xl-5 mb-5 align-self-end float-end">
+
+                    <a class="btn">
+                        <h2>Ver Reel</h2>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path fill="#fff"
+                                d="M502.6 278.6l-128 128c-12.51 12.51-32.76 12.49-45.25 0c-12.5-12.5-12.5-32.75 0-45.25L402.8 288H32C14.31 288 0 273.7 0 255.1S14.31 224 32 224h370.8l-73.38-73.38c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l128 128C515.1 245.9 515.1 266.1 502.6 278.6z" />
+                            </svg>
+                    </a>
+
+                    <div class="video-container">
+                        <span class="close"> X </span>
+                        <video src="images/reel.mp4" controls> </video>
+                    </div>
 
 
-    <!-- Project 3 -->
-    <div class="basic-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-xl-5">
-                    <div class="text-container">
-                        <h2>Video conference and collaboration application</h2>
-                        <ul class="list-unstyled li-space-lg">
-                            <li class="d-flex">
-                                <i class="fas fa-square"></i>
-                                <div class="flex-grow-1">She alteration everything sympathize impossible many more words should be here his get compliment</div>
-                            </li>
-                            <li class="d-flex">
-                                <i class="fas fa-square"></i>
-                                <div class="flex-grow-1">Collected few extremity suffering met had sportsman. By some more spite about do of do allow blush</div>
-                            </li>
-                            <li class="d-flex">
-                                <i class="fas fa-square"></i>
-                                <div class="flex-grow-1">Additions in conveying or collected objection in. Suffer few desire wonder her object hardly nearer</div>
-                            </li>
-                        </ul>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-                <div class="col-lg-6 col-xl-7">
-                    <div class="image-container">
-                        <img class="img-fluid" src="images/project-3.jpg" alt="alternative">
-                    </div> <!-- end of image-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of basic-4 -->
-    <!-- end of project 3 -->
+                </div>
+
+            </div>
+        </div>
+
+        <div class="video-overlay"></div>
+        <video class="video-reel" autoplay loop muted>
+            <source src="images/reel.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <!-- PORTFOLIO -->
+    <div id="portfolio" class="my-5 container-fluid">
+
+        <h2 class="my-5 text-center">Portfolio</h2>
+        <div class="cards-list my-5 row">
+
+            <a href="/portfolio/3d.html" class="col">
+                <div class="card">
+                    <div class="card_image"> <img src="images/portfolio/categoria-3d.jpg" /> </div>
+                    <div class="card_title text-light">
+                        <p>3D</p>
+                    </div>
+                </div>
+            </a>
+            <a href="" class="col">
+                <div class="card">
+                    <div class="card_image"> <img src="images/portfolio/categoria-web.jpg" /> </div>
+                    <div class="card_title text-light">
+                        <p>WEB</p>
+                    </div>
+                </div>
+            </a>
+            <a href="" class="col">
+                <div class="card">
+                    <div class="card_image"> <img src="images/portfolio/categoria-campañas.jpg" /> </div>
+                    <div class="card_title text-light">
+                        <p>CAMPAÑAS</p>
+                    </div>
+                </div>
+            </a>
+            <a href="" class="col">
+                <div class="card">
+                    <div class="card_image"> <img src="images/portfolio/categoria-motion.jpg" /> </div>
+                    <div class="card_title text-light">
+                        <p>DISEÑO GRÁFICO</p>
+                    </div>
+                </div>
+            </a>
+            <a href="/portfolio/motion.html" class="col">
+                <div class="card">
+                    <div class="card_image"> <img src="images/portfolio/categoria-vfx.jpg" /> </div>
+                    <div class="card_title text-light">
+                        <p>MOTION GRAPHICS</p>
+                    </div>
+                </div>
+            </a>
 
 
-    <!-- Process -->
-    <div class="basic-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="h2-heading">Our product making process</h2>
-                    <hr class="hr-heading">
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="step-container">
-                        <div class="step">PLAN</div>
-                        <i class="fas fa-chevron-right"></i>
-                        <div class="step">DESIGN</div>
-                        <i class="fas fa-chevron-right"></i>
-                        <div class="step">DEVELOP</div>
-                    </div> <!-- end of step-container -->
-                    <p>Abroad no chatty others my silent an. Fat way appear denote who wholly narrow gay settle. Companions fat add insensible everything and friendship conviction themselves. Theirs months ten and more words are  here had</p>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of basic-5 -->
-    <!-- end of process -->
+
+        </div>
+
+    </div>
 
 
-    <!-- Services -->
+
+    <!-- SERVICIOS -->
     <div id="services" class="cards-1 bg-gray">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="h2-heading">Product development services</h2>
-                    <p class="p-heading">Smile spoke total few great had never their too. Amongst moments do in arrived at my replied. Fat weddings servants but man believed having said that prospect companions</p>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
+                <div class="col-lg-12 pb-5">
+                    <h2 class="h2-heading">Nuestros servicios</h2>
+                </div>
+            </div>
             <div class="row">
                 <div class="col-lg-12">
 
-                    <!-- Card -->
-                    <div class="card first">
+
+                    <div class="card first align-items-center">
                         <div class="card-icon">
-                            <span class="fas fa-rocket green"></span>
+                            <span class="fas fa-rocket"></span>
                         </div>
                         <div class="card-body">
-                            <h4 class="card-title">Product planning</h4>
-                            <div class="card-text">Nay newspaper can sportsman are admitting gentleman belonging his. Is oppose no summer lovers</div>
+                            <h4 class="card-title">Branding e identidad visual</h4>
+                            <div class="card-text">Diseñamos y mejoramos la cara visible de tu marca.</div>
                         </div>
                     </div>
-                    <!-- end of card -->
 
-                    <!-- Card -->
-                    <div class="card second">
+
+
+                    <div class="card second align-items-center">
                         <div class="card-icon">
-                            <span class="far fa-clock green"></span>
+                            <i class="fas fa-bolt"></i>
                         </div>
                         <div class="card-body">
-                            <h4 class="card-title">Design and style</h4>
-                            <div class="card-text">Not his difficulty boisterous surro bed. Seems folly if in given scale now where word contented</div>
+                            <h4 class="card-title">Social Media</h4>
+                            <div class="card-text">Creamos y gestionamos el contenido para que tus redes sociales
+                                exploten.</div>
                         </div>
                     </div>
-                    <!-- end of card -->
 
-                    <!-- Card -->
-                    <div class="card third">
+                    <div class="card redes align-items-center">
                         <div class="card-icon">
-                            <span class="far fa-comments green"></span>
+                            <i class="fas fa-code"></i>
                         </div>
                         <div class="card-body">
-                            <h4 class="card-title">Development</h4>
-                            <div class="card-text">Living valley had silent eat merits esteem bed. In last an or went wise as left. Visited civilly</div>
+                            <h4 class="card-title">Desarrollo Web </h4>
+                            <div class="card-text">Diseñamos la página Web para que se adapte a tus necesidades.</div>
                         </div>
                     </div>
-                    <!-- end of card -->
 
-                    <!-- Card -->
-                    <div class="card first">
+                    <div class="card first align-items-center">
                         <div class="card-icon">
-                            <span class="fas fa-camera green"></span>
+                            <i class="fas fa-play"></i>
                         </div>
                         <div class="card-body">
-                            <h4 class="card-title">Launch events</h4>
-                            <div class="card-text">So colonel he calling so unreserved do interested increasing sentimen. Hola vanity day giving points</div>
+                            <h4 class="card-title">Motion Graphics y VFX </h4>
+                            <div class="card-text">Hacemos piezas audiovisuales para diferentes ámbitos.</div>
                         </div>
                     </div>
-                    <!-- end of card -->
 
-                    <!-- Card -->
-                    <div class="card second">
+                    <div class="card second align-items-center">
                         <div class="card-icon">
-                            <span class="fas fa-chart-pie green"></span>
+                            <i class="fas fa-cubes"></i>
                         </div>
                         <div class="card-body">
-                            <h4 class="card-title">Evolution reports</h4>
-                            <div class="card-text">Within six not law. Few impression difficulty his use has comparison how should it be decisively</div>
-                        </div>
-                    </div>
-                    <!-- end of card -->
-
-                    <!-- Card -->
-                    <div class="card third">
-                        <div class="card-icon">
-                            <span class="far fa-chart-bar green"></span>
-                        </div>
-                        <div class="card-body">
-                            <h4 class="card-title">Market analysis</h4>
-                            <div class="card-text">Had repulsive dashwoods suspic sincerity but advantage now him. Remark easily garret nor nay</div>
-                        </div>
-                    </div>
-                    <!-- end of card -->
-
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of cards-1 -->
-    <!-- end of services -->
-
-
-    <!-- About -->
-    <div id="about" class="counter">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="h2-heading">Why should you work with us</h2>
-                    <hr class="hr-heading">
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-            <div class="row">
-                <div class="col-xl-6">
-                    <ul class="list-unstyled">
-                        <li class="d-flex">
-                            <h5 class="number">1.</h5>
-                            <div class="flex-grow-1">
-                                <h5>Expertise in digital products</h5>
-                                <div class="text">Civil those mrs enjoy shy fat merry. You greatest jointure saw horrible. He private he on be how the words look imagine suppose</div>
+                            <h4 class="card-title">Modelado y Render 3D</h4>
+                            <div class="card-text">Visualización e integración realista de productos, arquitectura.
                             </div>
-                        </li>
-                        <li class="d-flex">
-                            <h5 class="number">2.</h5>
-                            <div class="flex-grow-1">
-                                <h5>Highly skilled team of experts</h5>
-                                <div class="text">Blind there if every no so at. Own neglected you preferred way sincerity delivered his attempted. To of message more now cottage</div>
-                            </div>
-                        </li>
-                        <li class="d-flex">
-                            <h5 class="number">3.</h5>
-                            <div class="flex-grow-1">
-                                <h5>Partnerships with marketing agencies</h5>
-                                <div class="text">Be at miss or each good play home they. It leave taste mr in it fancy. She son lose does fond bred gave lady get. Sir her company</div>
-                            </div>
-                        </li>
-                    </ul>
-                </div> <!-- end of col -->
-                <div class="col-xl-6">
-                    
-                    <!-- Counter -->
-                    <div class="counter-container">
-                        <div class="counter-cell">
-                            <div data-purecounter-start="0" data-purecounter-end="231" data-purecounter-duration="3" class="purecounter">1</div>
-                            <div class="counter-info">Happy Customers</div>
-                        </div> <!-- end of counter-cell -->
-                        <div class="counter-cell">
-                            <div data-purecounter-start="0" data-purecounter-end="385" data-purecounter-duration="1.5" class="purecounter">1</div>
-                            <div class="counter-info">Issues Solved</div>
-                        </div> <!-- end of counter-cell -->
-                        <div class="counter-cell">
-                            <div data-purecounter-start="0" data-purecounter-end="159" data-purecounter-duration="3" class="purecounter">1</div>
-                            <div class="counter-info">Good Reviews</div>
-                        </div> <!-- end of counter-cell -->
-                        <div class="counter-cell">
-                            <div data-purecounter-start="0" data-purecounter-end="128" data-purecounter-duration="3" class="purecounter">1</div>
-                            <div class="counter-info">Case Studies</div>
-                        </div> <!-- end of counter-cell -->
-                    </div> <!-- end of counter-container -->
-                    <!-- end of counter -->
+                        </div>
+                    </div>
 
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of counter -->
-    <!-- end of about -->
+                    <div class="card align-items-center">
+                        <div class="card-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Publicidad</h4>
+                            <div class="card-text">Diseñamos una estrategia digital perfecta para que destaques y des un
+                                salto de calidad.</div>
+                        </div>
+                    </div>
 
 
-    <!-- Testimonials -->
-    <div class="slider-1">
-        <img class="quotes-decoration" src="images/quotes.svg" alt="alternative">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
+                </div>
+            </div>
+        </div>
+    </div>
 
-                    <!-- Card Slider -->
-                    <div class="slider-container">
-                        <div class="swiper-container card-slider">
-                            <div class="swiper-wrapper">
-                                
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <img class="testimonial-image" src="images/testimonial-1.jpg" alt="alternative">
-                                    <p class="testimonial-text">“Expense bed any sister depend changer off piqued one. Contented continued any happiness instantly objection yet her allowance. Use correct day new brought tedious. By come this been in. Kept easy or sons my it how about some words here done”</p>
-                                    <div class="testimonial-author">Marlene Visconte</div>
-                                    <div class="testimonial-position">General Manager - Scouter</div>
-                                </div> <!-- end of swiper-slide -->
-                                <!-- end of slide -->
-        
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <img class="testimonial-image" src="images/testimonial-2.jpg" alt="alternative">
-                                    <p class="testimonial-text">“Expense bed any sister depend changer off piqued one. Contented continued any happiness instantly objection yet her allowance. Use correct day new brought tedious. By come this been in. Kept easy or sons my it how about some words here done”</p>
-                                    <div class="testimonial-author">John Spiker</div>
-                                    <div class="testimonial-position">Team Leader - Vanquish</div>
-                                </div> <!-- end of swiper-slide -->
-                                <!-- end of slide -->
-        
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <img class="testimonial-image" src="images/testimonial-3.jpg" alt="alternative">
-                                    <p class="testimonial-text">“Expense bed any sister depend changer off piqued one. Contented continued any happiness instantly objection yet her allowance. Use correct day new brought tedious. By come this been in. Kept easy or sons my it how about some words here done”</p>
-                                    <div class="testimonial-author">Stella Virtuoso</div>
-                                    <div class="testimonial-position">Design Chief - Bikegirl</div>
-                                </div> <!-- end of swiper-slide -->
-                                <!-- end of slide -->
-        
-                            </div> <!-- end of swiper-wrapper -->
-        
-                            <!-- Add Arrows -->
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>
-                            <!-- end of add arrows -->
-        
-                        </div> <!-- end of swiper-container -->
-                    </div> <!-- end of slider-container -->
-                    <!-- end of card slider -->
 
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of slider-1 -->
-    <!-- end of testimonials -->
+
+
 
 
     <!-- Team -->
-    <div class="cards-2 bg-gray">
+    <div id="team" class="cards-2 bg-gray text-center">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="h2-heading">Specialized team members</h2>
-                    <p class="p-heading">It as announcing it me stimulated frequently continuing. Least their she you now above going stand forth. He set this new record pretty future afraid should genius spirit on</p>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-            <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-12 my-5">
+                    <h2 class="">Nosotros</h2>
+                    <p class="">Todos somos partes de algo mucho más grande.</p>
+                </div>
+            </div>
+            <div class="cards row justify-content-center">
 
                     <!-- Card -->
-                    <div class="card">
+                    <div class="card col-8 col-md-3">
                         <div class="card-image">
-                            <img class="img-fluid" src="images/team-member-1.jpg" alt="alternative">
+                            <img class="img-fluid rounded-0" src="images/team-member-1.jpg" alt="alternative">
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title">Lacy Whitelong</h5>
-                            <p class="card-text">Business Developer</p>
+                            <h5 class="card-title">Juan Cruz Murguia</h5>
+                            <p class="card-text">Diseño Web</p>
                             <span class="fa-stack">
                                 <a href="#your-link">
                                     <i class="fas fa-circle fa-stack-2x"></i>
@@ -536,13 +326,13 @@
                     <!-- end of card -->
 
                     <!-- Card -->
-                    <div class="card">
+                    <div class="card col-8 col-md-3">
                         <div class="card-image">
-                            <img class="img-fluid" src="images/team-member-2.jpg" alt="alternative">
+                            <img class="img-fluid rounded-0" src="images/team-member-2.jpg" alt="alternative">
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title">Sheila Zimern</h5>
-                            <p class="card-text">Software Engineer</p>
+                            <h5 class="card-title">Hernán Otero</h5>
+                            <p class="card-text">Diseño e ilustración</p>
                             <span class="fa-stack">
                                 <a href="#your-link">
                                     <i class="fas fa-circle fa-stack-2x"></i>
@@ -560,13 +350,13 @@
                     <!-- end of card -->
 
                     <!-- Card -->
-                    <div class="card">
+                    <div class="card col-8 col-md-3">
                         <div class="card-image">
-                            <img class="img-fluid" src="images/team-member-3.jpg" alt="alternative">
+                            <img class="img-fluid rounded-0" src="images/team-member-3.jpg" alt="alternative">
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title">Chris Brown</h5>
-                            <p class="card-text">Online Marketer</p>
+                            <h5 class="card-title">Eugenia Nuñez</h5>
+                            <p class="card-text">3D y VFX</p>
                             <span class="fa-stack">
                                 <a href="#your-link">
                                     <i class="fas fa-circle fa-stack-2x"></i>
@@ -584,13 +374,13 @@
                     <!-- end of card -->
 
                     <!-- Card -->
-                    <div class="card">
+                    <div class="card col-8 col-md-3">
                         <div class="card-image">
-                            <img class="img-fluid" src="images/team-member-4.jpg" alt="alternative">
+                            <img class="img-fluid rounded-0" src="images/team-member-4.jpg" alt="alternative">
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title">Mary Villalonga</h5>
-                            <p class="card-text">Product Manager</p>
+                            <h5 class="card-title">Alejandro Nuñez</h5>
+                            <p class="card-text">Motion Graphics</p>
                             <span class="fa-stack">
                                 <a href="#your-link">
                                     <i class="fas fa-circle fa-stack-2x"></i>
@@ -605,13 +395,13 @@
                             </span>
                         </div>
                     </div>
-                    <!-- end of card -->
+                   
+
+                
+            </div> 
+        </div> 
+    </div> 
     
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of cards-2 -->
-    <!-- end of team -->
 
 
     <!-- Contact -->
@@ -619,31 +409,33 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2 class="h2-heading">Let us know about your project</h2>
-                    <p class="p-heading">Of will at sell well at as. Too want but tall nay like old removing yourself today</p>
+                    <h2 class="h2-heading">Contanos sobre tu idea</h2>
+                    <p class="p-heading">Potenciandonos juntos, vamos a sacar lo mejor.</p>
                     <ul class="list-unstyled li-space-lg">
-                        <li><i class="fas fa-map-marker-alt"></i> &nbsp;22 Innovative, San Francisco, CA 94043, US</li>
-                        <li><i class="fas fa-phone"></i> &nbsp;<a href="tel:00817202212">+81 720 2212</a></li>
-                        <li><i class="fas fa-envelope"></i> &nbsp;<a href="mailto:contact@site.com">contact@site.com</a></li>
+                        <li><i class="fas fa-map-marker-alt"></i> &nbsp;Buenos Aires</li>
+                        <li><i class="fas fa-phone"></i> &nbsp;<a href="tel:00817202212">+1168334891</a></li>
+                        <li><i class="fas fa-envelope"></i> &nbsp;<a
+                                href="mailto:contact@site.com">agenciahidra@gmail.com</a></li>
                     </ul>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
             <div class="row">
-                <div class="col-lg-10 offset-lg-1">
-                    
+                <div class="col-lg-8 justify-content-center mx-auto offset-lg-1">
+
                     <!-- Contact Form -->
                     <form>
                         <div class="form-group">
-                            <input type="text" class="form-control-input" placeholder="Name" required>
+                            <input type="text" class="form-control-input" placeholder="Nombre" required>
                         </div>
                         <div class="form-group">
                             <input type="email" class="form-control-input" placeholder="Email" required>
                         </div>
                         <div class="form-group">
-                            <textarea class="form-control-textarea" placeholder="Message" required></textarea>
+                            <textarea class="form-control-textarea"
+                                placeholder="Quiero hacer una publicidad para mi empresa..." required></textarea>
                         </div>
                         <div class="form-group">
-                            <button type="submit" class="form-control-submit-button">Submit</button>
+                            <button type="submit" class="form-control-submit-button">Envíar</button>
                         </div>
                     </form>
                     <!-- end of contact form -->
@@ -656,23 +448,23 @@
 
 
     <!-- Footer -->
-    <div class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="footer-col first">
-                        <h6>About Elma</h6>
-                        <p class="p-small">He oppose at thrown desire of no. Announcing impression unaffected day his are unreserved indulgence. Him hard find read are you</p>
-                    </div> <!-- end of footer-col -->
-                    <div class="footer-col second">
-                        <h6>Links</h6>
-                        <ul class="list-unstyled li-space-lg p-small">
-                            <li>Important: <a href="terms.html">Terms & Conditions</a>, <a href="privacy.html">Privacy Policy</a></li>
-                            <li>Useful: <a href="#">Colorpicker</a>, <a href="#">Icon Library</a>, <a href="#">Illustrations</a></li>
-                            <li>Menu: <a class="page-scroll" href="#header">Home</a>, <a class="page-scroll" href="#projects">Projects</a>, <a class="page-scroll" href="#services">Services</a>, <a class="page-scroll" href="#contact">Contact</a></li>
+    <footer class="footer py-5">
+                    <div class="">
+                        <ul class="list-unstyled">
+                            <li>
+                                <a class="page-scroll pr-2" href="#header">Inicio</a> -
+                                <a class="page-scroll  pr-2" href="#projects">Proyectos</a> -
+                                <a class="page-scroll  pr-2" href="#services">Servicios</a> -
+                                <a class="page-scroll  pr-2" href="#team">Nosotros</a> -
+                                <a class="page-scroll  pr-2" href="#contact">Contacto</a>
+                            </li>
                         </ul>
-                    </div> <!-- end of footer-col -->
-                    <div class="footer-col third">
+                    </div>
+
+                   
+                    
+                    
+                    <div class="footer-col redes text-center">
                         <span class="fa-stack">
                             <a href="#your-link">
                                 <i class="fas fa-circle fa-stack-2x"></i>
@@ -692,17 +484,19 @@
                             </a>
                         </span>
                         <span class="fa-stack">
-                            <a href="#your-link">
+                            <a href="https://www.instagram.com/hidra.multimedia/">
                                 <i class="fas fa-circle fa-stack-2x"></i>
                                 <i class="fab fa-instagram fa-stack-1x"></i>
                             </a>
                         </span>
-                        <p class="p-small">We would love to hear from you <a href="mailto:contact@site.com"><strong>contact@site.com</strong></a></p>
+
+                        
+                       
                     </div> <!-- end of footer-col -->
-                </div> <!-- end of col -->
+                
             </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of footer -->  
+
+    </footer> <!-- end of footer -->
     <!-- end of footer -->
 
 
@@ -711,28 +505,27 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <p class="p-small">Copyright © <a href="#your-link">Your name</a></p>
-                </div> 
-                
-                <div class="col-lg-12">
-                    <p class="p-small">Distributed by :<a href="https://themewagon.com/">Themewagon</a></p>
-                </div> <<!-- end of col -->
+                    <p class="p-small">Copyright © <a href="index.html">Agencia Hidra 2022</a></p>
+                </div>
+
             </div> <!-- enf of row -->
         </div> <!-- end of container -->
-    </div> <!-- end of copyright --> 
+    </div> <!-- end of copyright -->
     <!-- end of copyright -->
-    
+
 
     <!-- Back To Top Button -->
     <button onclick="topFunction()" id="myBtn">
         <img src="images/up-arrow.png" alt="alternative">
     </button>
     <!-- end of back to top button -->
-    	
+
     <!-- Scripts -->
-    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
-    <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
-    <script src="js/purecounter.min.js"></script> <!-- Purecounter counter for statistics numbers -->
-    <script src="js/scripts.js"></script> <!-- Custom scripts -->
+    <script src="index.js"> </script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/purecounter.min.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
+
 </html>
