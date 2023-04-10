@@ -539,32 +539,35 @@ a:hover {
 /************************/
 
 #intro{
-	background-color: var(--rojo-color);
+	height: 100vh;
+	background-image: url(/images/bg-agencia-web.jpg);
+	background-size: cover;
+	background-position: center center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	
 }
 
-#intro .container{
-	height: 100vh;
+
+#intro .container-rojo{
+	background: var(--azul-color);
+	display: flex;
+	flex-direction: column;
+	padding: 64px 32px;
+	width:60%;
+	box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.50), 
+	-5px -5px 30px 15px rgba(0,0,0,0.05);
 }
 
-#intro p{
+#intro p,h1{
 	color: var(--blanco-color);
 }
 
-
-#intro h1 {
-	color: var(--blanco-color);
-	line-height: 1.2;
-	font-size: 3.5rem;
+#intro h1{
+	margin-bottom: 32px;
 }
 
-#intro h1 span{
-	font-size: 4rem;
-	line-height: 1;
-	text-transform: uppercase;
-	font-weight: bolder;
-	letter-spacing: 0.5rem;
-}
 
 
 /*********************/
@@ -687,8 +690,9 @@ a:hover {
 /***************PORTFOLIO SECCION////////////*/
 
 #portfolio{
-	height: auto;
+	height: 100vh;
 	overflow: hidden;
+	background-color: var(--azul-color);
 }
 
 #portfolio .cards-list a{
@@ -698,6 +702,7 @@ a:hover {
 
 #portfolio h2{
 	color:var(--rojo-color);
+	font-weight: bolder;
 }
 #portfolio .cards-list {
 	z-index: 0;
@@ -746,6 +751,53 @@ a:hover {
   
   .title-black {
 	color: black;
+  }
+  
+
+  .image-container {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	overflow: hidden;
+  }
+  
+  .image-container:after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: white;
+	top: 0;
+	left: 0;
+	mask: url(#x-mask);
+	-webkit-mask: url(#x-mask);
+  }
+  
+  .x-mask {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+  }
+  
+  .x-mask:before,
+  .x-mask:after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	background-color: black;
+	top: 50%;
+	transform-origin: center;
+  }
+  
+  .x-mask:before {
+	transform: rotate(45deg);
+  }
+  
+  .x-mask:after {
+	transform: rotate(-45deg);
   }
   
   @media all and (max-width: 500px) {
@@ -821,6 +873,15 @@ a:hover {
 /********************/
 /*     Services     */
 /********************/
+#services{
+	background-color: var(--azul-color);
+}
+
+#services h2,p,h4,.card-text{
+	color: white;
+}
+
+
 .cards-1 {
 	padding-top: 9.5rem;
 	padding-bottom: 7rem;
@@ -1689,7 +1750,7 @@ a:hover {
   z-index: 100;
   right: 1rem;
   padding: 4px;
-  background: var(--rojo-color);
+  background: var(--azul-color);
   cursor: pointer;
   border: none;
 }
