@@ -64,17 +64,19 @@
 }
 
 .barra .active{
-    border: 1px var(--rojo-color) solid;
-    color: white;
+    color: var(--rojo-color);
+    font-weight: bolder;
 }
 
 .barra a:hover{
-    border: 1px var(--rojo-color) solid;
-    color: white;
+
+    color: var(--rojo-color);
 }
 
 .barra a, .navegacion a{
     text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: bold;
 }
 
 .barra a {
@@ -86,7 +88,26 @@
 }
 
 #navbar{
-    background-color:var(--azul-color);
+    background-color:var(--azul-color)!important;
+    background: none;
+}
+
+#navbar div:first-child{
+    display: flex;
+    justify-content: space-between;
+}
+
+#navbar .barra{
+    padding: 0;
+}
+
+#navbar .container{
+   width: auto;
+   margin: 0;
+}
+
+#navbar .logo{
+    width: 128px;
 }
 
 main{
@@ -156,26 +177,28 @@ main{
     width: 100%;
     justify-content: space-between;
     background-color: #1e1730;
-    padding: 8px;
+    padding: 16px 32px;
+    margin: 0;
+    margin-top: 90px;
 }
 
 .barra-interior a{
     padding: 8px 16px;
-    color: white;
+    color: #b1b1b1;
     background-color: #1e1730;
-    border: 2px var(--rojo-color) solid;
     border-radius: 32px;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 0.8rem;
+    border: 1px transparent solid;
+    transition: all 0.1s ease-in;
 }
 .barra-interior a:hover{
     padding: 8px 16px;
     color: white;
-    background-color: var(--rojo-color);
-    border: 2px var(--rojo-color) solid;
+    border: 1px var(--rojo-color) solid;
     border-radius: 32px;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 0.8rem;
 }
 
 
@@ -185,28 +208,62 @@ main{
 }
 
 #image-gallery{
-    width: 70vw;
-    margin: 4rem auto;
+    display: flex;
+    width: 100vw;
+    margin: 32px auto;
+    justify-content: center;
 }
 
 #main-image{
-    width: 100%;
+    width: 60vw;
     box-shadow: rgba(0,0, 0, 0.5) 0px 4px 12px;
+    margin-right: 32px;
 }
 
 #miniaturas{
     display: flex;
+    flex-direction: column;
     justify-content:center;
     margin-top: 2rem;
-
 }
 
 .miniatura{
     width: 100px;
     height: 100px;
-    margin: 0 10px;
+    margin: 10px 0px;
     cursor: pointer;
     object-fit: cover;
+    filter: brightness(0.7);
+    transition: 0.2s ease-in all;
+}
+
+.miniatura:hover{
+    filter: brightness(1);
+}
+
+.boton-extra{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+}
+
+.boton-extra a{
+    color: white;
+    padding: 8px 32px;
+    color: white;
+    border: 1px var(--rojo-color) solid;
+    border-radius: 32px;
+    text-decoration: none;
+}
+
+.boton-extra a:hover{
+    padding: 8px 32px;
+    color: white;
+    background-color: var(--rojo-color);
+    border: 1px var(--rojo-color) solid;
+    border-radius: 32px;
+    text-decoration: none;
 }
 
 @media(min-width:300px) and (max-width:768px){

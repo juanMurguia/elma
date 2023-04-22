@@ -310,7 +310,6 @@ a:hover {
 /*     Navbar     */
 /**********************/
 #navbar {
-	background-color: var(--azul-color);
 	font-weight: 600;
 	font-size: 0.875rem;
 	line-height: 0.875rem;
@@ -349,6 +348,11 @@ a:hover {
 	text-decoration: none;
 }
 
+.logo{
+	width: 128px;
+	margin-left: 2rem;
+}
+
 .offcanvas-collapse {
 	position: fixed;
 	top: 3.25rem; /* adjusts the height between the top of the page and the offcanvas menu */
@@ -376,10 +380,6 @@ a:hover {
 	margin-bottom: 0.5rem;
 }
 
-.navbar.top-nav-collapse {
-	background-color: var(--rojo-color)!important;
-	box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.025);
-}
 
 
 .navbar .nav-item .nav-link {
@@ -931,12 +931,21 @@ a:hover {
 
 .cards-1 .card-title {
 	margin-bottom: 0.625rem;
+	color: white;
 }
 
 
 /*****************/
 /*     About     */
 /*****************/
+
+#team{
+	background-color: var(--azul-color);
+}
+
+#team .card-body, .card-text, .card-title,h2{
+	color: white;
+}
 .counter {
 	padding-top: 9.5rem;
 	padding-bottom: 5rem;
@@ -1112,7 +1121,7 @@ a:hover {
 /*     Footer     */
 /******************/
 .footer {
-	background-color: #130F1D;
+	background-color: #1e1730;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -1158,7 +1167,7 @@ a:hover {
 /*********************/
 .copyright {
 	padding-bottom: 1rem;
-	background-color: var(--azul-color);
+	background-color: #1e1730;
 	text-align: center;
 }
 
@@ -1443,13 +1452,13 @@ a:hover {
 	/* Navigation */
 	.navbar {
 		padding: 1.2rem 0rem;
-		background-color: transparent;
+		background: rgb(0,0,0);
+		background: linear-gradient(180deg, rgba(0,0,0,0.8981967787114846) 0%, rgba(255,255,255,0) 100%);
 		box-shadow: none;
 		transition: all 0.2s;
 	}
 
 	.navbar.top-nav-collapse {
-		background-color: var(--azul-color)!important;
 		box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.025);
 	}
 
