@@ -212,12 +212,15 @@ main{
     width: 100vw;
     margin: 32px auto;
     justify-content: center;
+    padding: 0% 15%
 }
 
 #main-image{
-    width: 60vw;
+    width: 100%;
+    height: auto;
     box-shadow: rgba(0,0, 0, 0.5) 0px 4px 12px;
     margin-right: 32px;
+    aspect-ratio: 16 / 9;
 }
 
 #miniaturas{
