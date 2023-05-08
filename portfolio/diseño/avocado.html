@@ -19,51 +19,59 @@
 </head>
 <body>
     
-    <!-- Navigation -->
-    <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-dark" aria-label="Main navigation">
-        <div>
+    <nav class="menu2">
+        <section class="menu2__container">
+            <a href="/index.html" class="menu2__logo"><img src="/images/logo.svg" class="logo" alt=""></a>
 
-            <!-- Image Logo -->
-            <a class="logo" href="/index.html"><img src="/images/logo.svg" alt="home"></a> 
-
-            <!-- Text Logo - Use this if you don't have a graphic logo -->
-            <!-- <a class="navbar-brand logo-text" href="index.html">Elma</a> -->
-
-            
-                <ul class="barra">
-                    <a href="/portfolio/3d.html" > <li>3D</li> </a> 
-                    <a href="/portfolio/motion.html"> <li>MOTION</li> </a> 
-                    <a href="#"  class="active"> <li>WEB</li> </a> 
-                    <a href=" "> <li>DISEÑO</li> </a> 
-                    <a href=" "> <li>CAMPAÑAS</li> </a> 
-                    
-                </ul>
-           
-
-                <div class="container ">
-                    
-                    <ul class="menu">
-                        <a class="" href="index.html"><img src="/images/logo.svg" alt="home"></a> 
-                        <li><a class="menuItem" href="/index.html">inicio</a></li>
-                        <li><a class="menuItem" href="/index.html#projects">proyectos</a></li>
-                        <li><a class="menuItem" href="/index.html#services">servicios</a></li>
-                        <li><a class="menuItem" href="/index.html#contact">contacto</a></li>
+            <ul class="menu2__links">
+                <li class="menu2__item">
+                    <a href="/index.html" class="menu2__link">Inicio</a>
+                </li>
+    
+                <li class="menu2__item menu2__item--show">
+                    <a href="#" class="menu2__link">Proyectos <img src="/images/arrow-right-svg.svg" class="menu2__arrow"></a>
+    
+                    <ul class="menu2__nesting">
+                        <li class="menu2__inside">
+                            <a href="/portfolio/3d.html" class="menu2__link menu2__link--inside">3D</a>
+                        </li>
+                        <li class="menu__inside">
+                            <a href="/portfolio/web.html" class="menu2__link menu2__link--inside">Web</a>
+                        </li>
+                        <li class="menu__inside">
+                            <a href="/portfolio/diseño/campaña.html" class="menu2__link menu2__link--inside">Campañas</a>
+                        </li>
+                        <li class="menu__inside">
+                            <a href="/portfolio/diseño.html" class="menu2__link menu2__link--inside">Diseño Gráfico</a>
+                        </li>
+                        <li class="menu__inside">
+                            <a href="/portfolio/apps-juegos.html" class="menu2__link menu2__link--inside">Apps / Juegos</a>
+                        </li>
+                        <li class="menu__inside">
+                            <a href="/portfolio/motion.html" class="menu2__link menu2__link--inside">Motion Graphics</a>
+                        </li>
                     </ul>
-                </div>
-               
-              
-              <button class="hamburger">
-               
-                <i class="menuIcon">
-                    <img src="/images/favicon.png" alt="">
-                </i>
-                <i class="closeIcon">
-                    X
-                </i>
-              </button>
+                </li>
+
+                <li class="menu2__item">
+                    <a href="/index.html#services" class="menu2__link">Servicios</a>
+                </li>
+    
+                
+    
+                <li class="menu2__item">
+                    <a href="/index.html#contact" class="menu2__link">Contacto</a>
+                </li>
+    
+            </ul>
+
+            <div class="menu2__hamburguer">
+                <img src="/images/favicon.png" class="menu2__img">
             </div>
-           
-    </nav> 
+        </section>
+
+      
+    </nav>
 
   
    
@@ -71,27 +79,28 @@
     <div class="container-fluid pb-5">
         <div class="row justify-content-center">
             <ul class="barra-interior">
-                <a href="/portfolio/motion/"> Anterior Proyecto </a> 
-                <H4 class="text-center ">¿Lo hice? Aplicación Mobile</H4>
+                <a href="ballon.html"> Anterior Proyecto </a> 
+                <H4 class="text-center ">Avocado</H4>
 
-                <a href="/portfolio/motion/demogorgon.html" > Siguiente Proyecto </a> 
+                <a href="" > Siguiente Proyecto </a> 
                  
             </ul>
 
            
                 <div id="image-gallery">
-                    <img src="/images/portfolio/app-juegos/lo-hice- (1).jpg" alt="" id="main-image">
+                    <img src="/images/portfolio/diseño/avocado-1.jpg" alt="" id="main-image">
 
                     <div id="miniaturas">
-                        <img src="/images/portfolio/app-juegos/lo-hice- (1).jpg" class="miniatura" alt="image1">
-                        <img src="/images/portfolio/app-juegos/lo-hice- (2).jpg" class="miniatura" alt="image2">
-                        <img src="/images/portfolio/app-juegos/lo-hice- (3).jpg" class="miniatura" alt="image2">
+                        <img src="/images/portfolio/diseño/avocado-1.jpg" class="miniatura avocado" alt="image1">
+                        <img src="/images/portfolio/diseño/avocado-2.jpg" class="miniatura avocado" alt="image2">
+                        <img src="/images/portfolio/diseño/avocado-3.jpg" class="miniatura avocado" alt="image3">
+                        <img src="/images/portfolio/diseño/avocado-4.jpg" class="miniatura avocado" alt="image3">
+                        <img src="/images/portfolio/diseño/avocado-5.jpg" class="miniatura avocado" alt="image3">
+                        <img src="/images/portfolio/diseño/avocado-6.jpg" class="miniatura avocado" alt="image3">
                     </div>
                 </div>
 
-                <div class="boton-extra">
-                    <a href="https://www.figma.com/proto/WZeIX4Y2QAWkoN5tQXQUj0/WIREFRAMES-HIGH-FIDELITY?node-id=301-55&scaling=scale-down&page-id=301%3A54&starting-point-node-id=301%3A55     " target="_blank" > Probar prototipo </a>
-                </div>
+               
 
                 
                     
@@ -160,7 +169,7 @@
 <div class="container">
 <div class="row">
     <div class="col-lg-12">
-        <p class="p-small">Copyright © <a href="index.html">Agencia Hidra 2023</a></p>
+        <p class="p-small">Copyright © <a href="index.html">Agencia Hidra 2022</a></p>
     </div>
 
 </div> <!-- enf of row -->
@@ -176,6 +185,7 @@
     <!-- end of back to top button -->
     	
     <!-- Scripts -->
+    <script src="js/menu.js"></script> <!-- Bootstrap framework -->
     <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
     <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
     <script src="js/purecounter.min.js"></script> <!-- Purecounter counter for statistics numbers -->

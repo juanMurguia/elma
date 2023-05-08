@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Agencia Hidra</title>
+    <title>Buendi App</title>
     
     <!-- Styles -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@600&display=swap" rel="stylesheet">
@@ -11,14 +11,15 @@
     <link href="/css/fontawesome-all.min.css" rel="stylesheet">
     <link href="/css/swiper.css" rel="stylesheet">
 	<link href="/css/styles.css" rel="stylesheet">
-	<link href="/portfolio/styles.css" rel="stylesheet">
+	<link href="styles.css" rel="stylesheet">
     
 	
-	<!-- Favicon  -->
+
     <link rel="icon" href="/images/favicon.png">
 </head>
 <body>
     
+
     <nav class="menu2">
         <section class="menu2__container">
             <a href="/index.html" class="menu2__logo"><img src="/images/logo.svg" class="logo" alt=""></a>
@@ -73,42 +74,74 @@
       
     </nav>
 
-  
-   
-
-
-    <div class="container-fluid pb-5">
-        <div class="row justify-content-center">
-            <ul class="barra-interior">
-                <a href="/portfolio/motion/god-of-war.html"> Anterior Proyecto </a> 
-                <H4 class="text-center ">Demogorgon - VFX</H4>
-
-                <a href="/portfolio/motion/censo-nacional.html" > Siguiente Proyecto </a> 
-                 
-            </ul>
-
-            <div class="col-12">
-                <div id="image-gallery">
-                    <img src="/images/portfolio/motion/god of war.jpg" alt="" id="main-image">
-
-                    <div id="miniaturas">
-                        <img src="/images/about-background.jpg" class="miniatura" alt="image1">
-                        <img src="/images/about-background.jpg" class="miniatura" alt="image2">
-                        <img src="/images/about-background.jpg" class="miniatura" alt="image3">
-                        <img src="/images/about-background.jpg" class="miniatura" alt="image4">
-                        <img src="/images/about-background.jpg" class="miniatura" alt="image5">
-                    </div>
-                </div>
-
-                
-                    
-              
-                    
-            </div>
-        </div>
-    </div>
-
     
+    <main class="categoria">
+        
+        <div class="trabajos">
+
+           <a href="diseño/ballon.html"  class="m-0 p-0">
+                <div class="card">
+                    <div class="card-image">
+                         <img src="/images/portfolio/diseño/ballon (2).jpg" />
+                    </div>
+
+                    <div class="card-title">
+                        <p>Ballon <br>   Agency</p>
+                    </div>
+
+                </div>
+            </a>
+           <a href="/portfolio/diseño/avocado.html"  class="m-0 p-0">
+                <div class="card">
+                    <div class="card-image">
+                         <img src="/images/portfolio/diseño/avocado-1.jpg" />
+                    </div>
+
+                    <div class="card-title">
+                        <p>Avocado</p>
+                    </div>
+
+                </div>
+            </a>
+           <a href=""  class="m-0 p-0">
+                <div class="card">
+                    <div class="card-image">
+                         <img src="/images/portfolio/web/fixsur.jpg" />
+                    </div>
+
+                    <div class="card-title">
+                        <p>FixSur</p>
+                    </div>
+
+                </div>
+            </a>
+           <a href="web/vinoteca-victoria.html"  class="m-0 p-0">
+                <div class="card">
+                    <div class="card-image">
+                         <img src="/images/portfolio/web/vinoteca.jpg" />
+                    </div>
+
+                    <div class="card-title">
+                        <p>Vinoteca <br> "Victoria"</p>
+                    </div>
+
+                </div>
+            </a>
+           <a href="web/disney-plus.html"  class="m-0 p-0">
+                <div class="card">
+                    <div class="card-image">
+                         <img src="/images/portfolio/web/disney.jpg" />
+                    </div>
+
+                    <div class="card-title">
+                        <p>Disney+</p>
+                    </div>
+
+                </div>
+            </a>
+           
+        </div>
+    </main>
 
     <footer class="footer py-5">
         <div class="">
@@ -167,14 +200,13 @@
 <div class="container">
 <div class="row">
     <div class="col-lg-12">
-        <p class="p-small">Copyright © <a href="index.html">Agencia Hidra 2022</a></p>
+        <p class="p-small">Copyright © <a href="index.html">Agencia Hidra 2023</a></p>
     </div>
 
 </div> <!-- enf of row -->
 </div> <!-- end of container -->
 </div> <!-- end of copyright -->
 <!-- end of copyright -->
-    
 
     <!-- Back To Top Button -->
     <button onclick="topFunction()" id="myBtn">
@@ -183,24 +215,11 @@
     <!-- end of back to top button -->
     	
     <!-- Scripts -->
-    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
-    <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
-    <script src="js/purecounter.min.js"></script> <!-- Purecounter counter for statistics numbers -->
-    <script src="/js/menu.js"></script> <!-- Custom scripts -->
+    <script src="/js/menu.js"></script>
+    <script src="/js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="/js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="/js/purecounter.min.js"></script> <!-- Purecounter counter for statistics numbers -->
     <script src="/js/scripts.js"></script> <!-- Custom scripts -->
-    <script src="/index.js"></script> 
-    <script>
-        let miniaturas = document.querySelectorAll('.miniatura');
-        let imagenPrincipal = document.getElementById('main-image');
-
-
-        for(let i = 0; i < miniaturas.length; i++){
-            miniaturas[i].addEventListener('click',
-            function() {
-                imagenPrincipal.src = this.src;
-            })
-        }
-
-    </script><!-- Custom scripts -->
+    <script src="/index.js"></script> <!-- Custom scripts -->
 </body>
 </html>

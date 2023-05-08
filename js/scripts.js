@@ -95,21 +95,3 @@ if (theModal !== null) {
 		theModalGen.hide(); 
 	})
 }
-
-
-////////To top
-myButton = document.getElementById("myBtn");
-
-
-function scrollFunctionBTT() {
-	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-		myButton.style.display = "block";
-	} else {
-		myButton.style.display = "none";
-	}
-}
-
-
-function topFunction() {
-	document.documentElement.scrollTop = 0;
-}

@@ -20,59 +20,59 @@
 <body>
     
     <!-- Navigation -->
-    <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-dark" aria-label="Main navigation">
-        <div class="">
+    <nav class="menu2">
+        <section class="menu2__container">
+            <a href="/index.html" class="menu2__logo"><img src="/images/logo.svg" class="logo" alt=""></a>
 
-            <!-- Image Logo -->
-            <a class="logo" href="/index.html"><img src="/images/logo.svg" alt="home"></a> 
-
-            <!-- Text Logo - Use this if you don't have a graphic logo -->
-            <!-- <a class="navbar-brand logo-text" href="index.html">Elma</a> -->
-
-   
-
-                <div class="container d-flex justify-content-center ">
-                    
-                    <ul class="menu">
-                        <a class="" href="index.html"><img src="/images/logo.svg" alt="home"></a> 
-                        <li><a class="menuItem" href="/index.html">inicio</a></li>
-                        <li><a class="menuItem" href="/index.html#projects">proyectos</a></li>
-                        <li><a class="menuItem" href="/index.html#services">servicios</a></li>
-                        <li><a class="menuItem" href="/index.html#contact">contacto</a></li>
+            <ul class="menu2__links">
+                <li class="menu2__item">
+                    <a href="/index.html" class="menu2__link">Inicio</a>
+                </li>
+    
+                <li class="menu2__item menu2__item--show">
+                    <a href="#" class="menu2__link">Proyectos <img src="/images/arrow-right-svg.svg" class="menu2__arrow"></a>
+    
+                    <ul class="menu2__nesting">
+                        <li class="menu2__inside">
+                            <a href="/portfolio/3d.html" class="menu2__link menu2__link--inside">3D</a>
+                        </li>
+                        <li class="menu__inside">
+                            <a href="/portfolio/web.html" class="menu2__link menu2__link--inside">Web</a>
+                        </li>
+                        <li class="menu__inside">
+                            <a href="/portfolio/diseño/campaña.html" class="menu2__link menu2__link--inside">Campañas</a>
+                        </li>
+                        <li class="menu__inside">
+                            <a href="/portfolio/diseño.html" class="menu2__link menu2__link--inside">Diseño Gráfico</a>
+                        </li>
+                        <li class="menu__inside">
+                            <a href="/portfolio/apps-juegos.html" class="menu2__link menu2__link--inside">Apps / Juegos</a>
+                        </li>
+                        <li class="menu__inside">
+                            <a href="/portfolio/motion.html" class="menu2__link menu2__link--inside">Motion Graphics</a>
+                        </li>
                     </ul>
-                </div>
-               
-              
-              <button class="hamburger">
-               
-                <i class="menuIcon">
-                    <img src="/images/favicon.png" alt="">
-                </i>
-                <i class="closeIcon">
-                    X
-                </i>
-              </button>
+                </li>
+
+                <li class="menu2__item">
+                    <a href="/index.html#services" class="menu2__link">Servicios</a>
+                </li>
+    
+                
+    
+                <li class="menu2__item">
+                    <a href="/index.html#contact" class="menu2__link">Contacto</a>
+                </li>
+    
+            </ul>
+
+            <div class="menu2__hamburguer">
+                <img src="/images/favicon.png" class="menu2__img">
             </div>
-           
-    </nav> 
+        </section>
 
-    <div class="navegacion">
-        <a href="/index.html">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path fill="#FB2443"
-                    d="M502.6 278.6l-128 128c-12.51 12.51-32.76 12.49-45.25 0c-12.5-12.5-12.5-32.75 0-45.25L402.8 288H32C14.31 288 0 273.7 0 255.1S14.31 224 32 224h370.8l-73.38-73.38c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l128 128C515.1 245.9 515.1 266.1 502.6 278.6z" />
-            </svg>
-        </a>
-
-        <ul class="barra">
-            <a href="3d.html"> <li>3D</li> </a> 
-            <a href="motion.html"> <li>MOTION</li> </a> 
-            <a href="web.html" class="active"> <li>WEB</li> </a> 
-            <a href=" "> <li>DISEÑO</li> </a> 
-            <a href=" "> <li>CAMPAÑAS</li> </a> 
-            
-        </ul>
-    </div>
+      
+    </nav>
     
     <main class="categoria">
         
@@ -85,7 +85,7 @@
                     </div>
 
                     <div class="card-title">
-                        <p>Mars - Space X</p>
+                        <p>Space X</p>
                     </div>
 
                 </div>
@@ -121,7 +121,7 @@
                     </div>
 
                     <div class="card-title">
-                        <p>Vinoteca "Victoria"</p>
+                        <p>Vinoteca <br> "Victoria"</p>
                     </div>
 
                 </div>
@@ -216,6 +216,7 @@
     <!-- Scripts -->
     <script src="/js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
     <script src="/js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="/js/menu.js"></script> <!-- Swiper for image and text sliders -->
     <script src="/js/purecounter.min.js"></script> <!-- Purecounter counter for statistics numbers -->
     <script src="/js/scripts.js"></script> <!-- Custom scripts -->
     <script src="/index.js"></script> <!-- Custom scripts -->
