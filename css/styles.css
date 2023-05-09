@@ -2088,6 +2088,8 @@ a:hover {
   /********MENU NUEVO*********/
   .menu2{
     background-color: transparent;
+	background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,0.8981967787114846) 0%, rgba(0,0,0,0) 90%);
     color: #fff;
     height: 12vh;
     z-index: 999999;

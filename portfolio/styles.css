@@ -299,7 +299,7 @@ main{
     text-decoration: none;
 }
 
-@media(min-width:300px) and (max-width:768px){
+@media(min-width:200px) and (max-width:768px){
 
     
     .navegacion{
@@ -383,6 +383,50 @@ main{
         align-items: center;
         text-transform: uppercase;
       }
+
+      #image-gallery{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 32px auto;
+        justify-content: center;
+        padding: 0% 5%;
+    }
+    
+    #main-image{
+        width: 100%;
+        height: auto;
+        box-shadow: rgba(0,0, 0, 0.5) 0px 4px 12px;
+        margin-right: 32px;
+        aspect-ratio: 16 / 9;
+    }
+    
+    #miniaturas{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+    }
+
+    .barra-interior{
+        display: flex;
+        margin-top: 12vh;
+        padding: 3% 5%;
+        align-items: center;
+    }
+
+    .barra-interior h4{
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .barra-interior a{
+        text-align: left;
+        padding: 0;
+    }
+
+    .barra-interior a:nth-child(3){
+        text-align: right;
+    }
 
      
 
