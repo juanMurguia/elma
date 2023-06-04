@@ -73,8 +73,11 @@
       
     </nav>
   
-   
-
+    
+    <div id="fullImageView" onclick="Close()">
+        <img id="fullImage" src="" alt="" >
+        <span id="CloseButton" onclick="Close()"> X </span>             
+    </div>
     <div class="container-fluid pb-5">
         <div class="row justify-content-center">
             <ul class="barra-interior">
@@ -85,17 +88,14 @@
                  
             </ul>
 
-           
-                <div id="image-gallery">
-                    <img src="/images/portfolio/diseño/ballon (1).jpg" alt="" id="main-image">
+            <div id="image-gallery">
+                <iframe width="800" height="450" src="https://www.youtube.com/embed/gfPyWufB2wU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-                    <div id="miniaturas">
-                        <img src="/images/portfolio/diseño/ballon (1).jpg" class="miniatura" alt="image1">
-                        <img src="/images/portfolio/diseño/ballon (2).jpg" class="miniatura" alt="image2">
-                        <img src="/images/portfolio/diseño/ballon (3).jpg" class="miniatura" alt="image3">
-                        <img src="/images/portfolio/diseño/ballon (4).jpg" class="miniatura" alt="image3">
-                    </div>
+                <div id="miniaturas">
+             
                 </div>
+            </div>
+                
 
                
 
@@ -189,6 +189,17 @@
     <script src="/js/menu.js"></script> <!-- Custom scripts -->
     <script src="/index.js"></script> 
     <script>
+
+         function FullView(ImgLink){
+            document.getElementById('fullImage').src = ImgLink;
+            document.getElementById('fullImageView').style.display ='flex';
+        }
+
+        function Close(){
+            document.getElementById('fullImageView').style.display = 'none';
+        }
+
+
         let miniaturas = document.querySelectorAll('.miniatura');
         let imagenPrincipal = document.getElementById('main-image');
 

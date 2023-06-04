@@ -73,11 +73,14 @@
       
     </nav>
    
-
+    <div id="fullImageView" onclick="Close()">
+        <img id="fullImage" src="" alt="" >
+        <span id="CloseButton" onclick="Close()"> X </span>             
+ </div>
     <div class="container-fluid pb-5">
         <div class="row justify-content-center">
             <ul class="barra-interior">
-                <a href="/portfolio/web/vinoteca-victoria.html"> Anterior Proyecto </a> 
+                <a href="/portfolio/web/aorus.html"> Anterior Proyecto </a> 
                 <H4 class="text-center ">Buendi</H4>
 
                 <a href="/portfolio/web/disney-plus.html" > Siguiente Proyecto </a> 
@@ -86,7 +89,7 @@
 
            
                 <div id="image-gallery">
-                    <img src="/images/portfolio/app-juegos/buendi (1).jpg" alt="" id="main-image">
+                    <img src="/images/portfolio/app-juegos/buendi (1).jpg" alt="" id="main-image" onclick="FullView(this.src)">
 
                     <div id="miniaturas">
                         <img src="/images/portfolio/app-juegos/buendi (1).jpg" class="miniatura" alt="image1">
@@ -189,6 +192,16 @@
     <script src="/js/scripts.js"></script> <!-- Custom scripts -->
     <script src="/index.js"></script> 
     <script>
+
+        function FullView(ImgLink){
+            document.getElementById('fullImage').src = ImgLink;
+            document.getElementById('fullImageView').style.display ='flex';
+        }
+
+        function Close(){
+            document.getElementById('fullImageView').style.display = 'none';
+        }
+
         let miniaturas = document.querySelectorAll('.miniatura');
         let imagenPrincipal = document.getElementById('main-image');
 
