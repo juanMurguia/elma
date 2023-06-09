@@ -44,6 +44,10 @@
 
 .categoria {
     margin-right:0!important;
+    margin-top: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .navegacion{
@@ -120,6 +124,10 @@ main{
     justify-content: space-around;
     flex-grow: 1;
     flex-basis: 0;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .trabajos a{
